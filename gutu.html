@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>癒しグッツ</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Mochiy+Pop+One&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+   /* section img {
+      max-width: 100%;
+    }
+    .center {
+      margin: 0 auto 0 auto;
+      max-width: 90%;
+      width: 500px;
+    }
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    li {
+      flex: 1 1 auto;
+      margin-right: 8px;
+    }
+    li:last-of-type {
+      margin-right: 0;
+    }*/
+  </style>
+</head>
+<body>
+    <header id="top">
+      <div class="container flex pop">
+      <a href="index.html" class="logo"> <img src="images/toptop.png" width="200px"></a>
+          <nav>
+              <ul class="header_menu flex">
+                  <li><a href="index.html"><img src="images/top.png" width="100px">トップ</a></li>
+                  <li><a href="plan.html"><img src="images/top(1).png" width="100px">料金</a></li>
+                  <li><a href="company.html"><img src="images/top(2).png" width="100px">会社概要</a></li>
+                  <li><a href="contact.html"><img src="images/top(3).png" width="100px">問い合わせ</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+  <div class="heading-bottom">CAT Cafe</div>
+
+  <article class="page">
+    <ol>
+      <li><a href="index.html">TOP</a>&nbsp;&nbsp;&gt;</li>
+      <li>癒しグッツ</li>
+    </ol>
+  </article>
+
+  </header>
+  <main>
+    <div class="con-box">
+      <h1>癒しグッツ</h1>
+      <section>
+        <div class="center">
+          <div>
+            <img src="images/neko(1).png" id="bigimg">
+          </div>
+          <ul>
+            <li><img src="images/neko(1).png" class="thumb" data-image="images/neko_tibi(1).png"></li>
+            <li><img src="images/neko(2).png" class="thumb" data-image="images/neko_tibi(2).png"></li>
+            <li><img src="images/neko(3).png" class="thumb" data-image="images/neko_tibi(3).png"></li>
+          </ul>
+        </div>
+        <div class="center">
+          <ul>
+            <li><img src="images/neko (4).png" class="thumb" data-image="images/neko_tibi(4).png"></li>
+            <li><img src="images/neko(5).png" class="thumb" data-image="images/neko_tibi(5).png"></li>
+            <li><img src="images/neko(6).png" class="thumb" data-image="images/neko_tibi(6).png"></li>
+          </ul>
+        </div>
+        
+      </section>
+    </div><!-- /.con-box -->
+  </main>
+
+    <aside>
+      <h1>ご案内</h1>
+      <ul>
+          <li><a href="shoukai.html"><img src="images/nikukyuu.png" width="30px">　猫ちゃん紹介 　</a></li>
+          <li><a href="#"><img src="images/nikukyuu.png" width="30px">　癒しグッツ 　</a></li>
+          <li><a href="plan.html"><img src="images/nikukyuu.png" width="30px">　料金表　 </a></li>
+          <li><a href="contact.html"><img src="images/nikukyuu.png" width="30px">　お問い合わせ 　</a></li>
+      </ul>
+  </aside>
+
+
+  <footer>
+    <nav class="sns">
+      <ul>
+          <li><a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=394ryqie"><img src="images/sns1.png" width="60px"></a></li>
+          <li><a href="https://twitter.com/mofutannnnn"><img src="images/sns2.png" width="60px"></a></li>
+          <li><a href="https://www.instagram.com/opuchan2022/"><img src="images/sns3.png" width="60px"></a></li>
+      </ul>
+  </nav>
+
+  <div>
+    <p id="toppage"><a href="#top"><img src="images/nikukyuu.png" width="30px"> ページTOPへ</a></p>
+</div>
+
+  <div id="boder"></div>
+  <div id="footer-map">
+      <p><a href="Privacy Policy.html">プライバシーポリシー</a></p>
+      <p><a href="Disclaimer.html">免責事項</a></p>
+      <p><a href="#">サイトマップ</a></p>
+      <p><a href="Transactions.html">特定商取引法</a></p>
+  </div>
+  <p id="copyright"><small>Copyright &copy; 2024 TenCafe All Rights Reserved.</small></p>
+</footer>
+
+  
+  <script>
+    'use strict'
+    
+    const thumbs = document.querySelectorAll('.thumb');
+    
+    thumbs.forEach(function(item) {
+      item.onclick = function() {
+        const bigImg = document.getElementById('bigimg');
+        bigImg.src = this.dataset.image;
+        bigImg.style.width = '600px'; // ここで希望の幅を設定します
+        bigImg.style.height = 'auto'; // 高さは自動調整
+        console.log(this.dataset.image);
+      }
+    });
+    </script>
+      
+</body>
+</html>
+

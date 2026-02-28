@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--フォント-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Mochiy+Pop+One&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="top">
+        <div class="container flex pop">
+            <a href="index.html" class="logo"><img src="images/toptop.png" width="200px" alt="ロゴ"></a>
+            <nav>
+                <ul class="header_menu flex">
+                    <li><a href="index.html"><img src="images/top.png" width="100px">トップ</a></li>
+                    <li><a href="plan.html"><img src="images/top(1).png" width="100px">料金</a></li>
+                    <li><a href="company.html"><img src="images/top(2).png" width="100px">会社概要</a></li>
+                    <li><a href="contact.html"><img src="images/top(3).png" width="100px">問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="heading-bottom">CAT Cafe</div>
+    <div class="page">
+        <ol>
+            <li><a href="index.html">TOP</a>&nbsp;&nbsp;&gt;</li>
+            <li>お問い合わせ</li>
+        </ol>
+    </div>
+    <main class="company-page">
+        <div class="con-box">
+            <h1>お問い合わせ・予約フォーム</h1>
+            <form action="/submit-your-form-handler" method="POST">
+                <div>
+                    <label for="name">お名前　(必須)</label><br>
+                    <input type="text" id="name" name="name" required placeholder="名前（必須）">
+                </div>
+                <div>
+                    <label for="phone">電話番号（必須）</label><br>
+                    <input type="tel" id="phone" name="phone" required placeholder="電話（必須）"><br><br>
+                    <label for="contactType">連絡方法を選択してください：</label>
+                    <select id="contactType" name="contactType" required>
+                        <option value="email">メール</option>
+                        <option value="line">LINE</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="email">メールアドレス</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@example.com">
+                </div>
+                <div>
+                    <label for="line">LINE ID</label><br>
+                    <input type="text" id="line" name="line" placeholder="LINE ID">
+                </div>
+                <div>
+                    <label>性別：</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">男性</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">女性</label>
+                </div><br>
+                <div>
+                    <label for="number">人数（必須）：</label>
+                    <input type="number" id="number" name="number" min="1" max="10" required placeholder="必須">
+                </div>
+                <div>
+                    <label for="date">訪問日：</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div>
+                    <label for="inquiry"><br>お問い合わせ内容</label><br>
+                    <textarea id="inquiry" name="inquiry" rows="4" cols="50"></textarea>
+                </div><br>
+                <button type="submit"><img src="images/submit.jpg" alt="送信ボタン" width="300px"></button>
+            </form>
+        </div><!-- /.con-box -->
+
+        <aside>
+            <h1>ご案内</h1>
+            <ul>
+                <li><a href="shoukai.html"><img src="images/nikukyuu.png" width="30px"> 猫ちゃん紹介</a></li>
+                <li><a href="gutu.html"><img src="images/nikukyuu.png" width="30px"> 癒しグッツ</a></li>
+                <li><a href="plan.html"><img src="images/nikukyuu.png" width="30px"> 料金表</a></li>
+                <li><a href="contact.html"><img src="images/nikukyuu.png" width="30px"> お問い合わせ</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <nav class="sns">
+            <ul>
+                <li><a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=394ryqie"><img src="images/sns1.png"
+                            width="60px"></a></li>
+                <li><a href="https://twitter.com/mofutannnnn"><img src="images/sns2.png" width="60px"></a></li>
+                <li><a href="https://www.instagram.com/opuchan2022/"><img src="images/sns3.png" width="60px"></a></li>
+            </ul>
+        </nav>
+        <div>
+            <p id="toppage"><a href="#top"><img src="images/nikukyuu.png" width="30px"> ページTOPへ</a></p>
+        </div>
+        <div id="boder"></div>
+        <div id="footer-map">
+            <p><a href="Privacy Policy.html">プライバシーポリシー</a></p>
+            <p><a href="Disclaimer.html">免責事項</a></p>
+            <p><a href="#">サイトマップ</a></p>
+            <p><a href="Transactions.html">特定商取引法</a></p>
+        </div>
+        <p id="copyright"><small>Copyright &copy; 2024 TenCafe All Rights Reserved.</small></p>
+    </footer>
+</body>
+
+</html>

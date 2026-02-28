@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "デスクトップ",
+		"genieai.promptPrefix.customPrompt2": "日本語で"
+	}
+}

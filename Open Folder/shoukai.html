@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>5-04_image</title>
+  <link href="../../_common/images/favicon.ico" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
+  <link href="../../_common/css/style.css" rel="stylesheet">
+  <style>
+    section img {
+      max-width: 100%;
+    }
+    .center {
+      margin: 0 auto 0 auto;
+      max-width: 90%;
+      width: 500px;
+    }
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    li {
+      flex: 1 1 auto;
+      margin-right: 8px;
+    }
+    li:last-of-type {
+      margin-right: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>イメージの切り替え</h1>
+      <h2>HTMLのdata-ナンデモ属性を使用する</h2>
+    </div><!-- /.container -->
+  </header>
+  <main>
+    <div class="container">
+      <section>
+        <div class="center">
+          <div>
+            <img src="img1.jpg" id="bigimg">
+          </div>
+          <ul>
+            <li><img src="images/neko(1).png" class="thumb" data-image="images/neko_tibi(1).png"></li>
+            <li><img src="images/neko(2).png" class="thumb" data-image="images/neko_tibi(2).png"></li>
+            <li><img src="images/neko(3).png" class="thumb" data-image="images/neko_tibi(3).png"></li>
+            <li><img src="images/neko (4).png" class="thumb" data-image="images/neko_tibi(4).png"></li>
+            <li><img src="images/neko(5).png" class="thumb" data-image="images/neko_tibi(5).png"></li>
+            <li><img src="images/neko(6).png" class="thumb" data-image="images/neko_tibi(6).png"></li>
+          </ul>
+        </div>
+
+        
+        
+      </section>
+    </div><!-- /.container -->
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>JavaScript Samples</p>
+    </div><!-- /.container -->
+  </footer>
+  
+  <script>
+    'use strict'
+
+    const thumbs = document.querySelectorAll('.thumb');
+        //console.log(thumbs);
+
+    thumbs.forEach(function(item, index) {
+      item.onclick = function() {
+        document.getElementById('bigimg').src = this.dataset.image;
+        console.log(this.dataset.image);
+      }
+    });
+  </script>
+  
+</body>
+</html>
+
